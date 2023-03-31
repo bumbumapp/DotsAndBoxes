@@ -1,0 +1,3 @@
+keystore password: admin123
+key alias: dotsnboxes
+key password: admin123

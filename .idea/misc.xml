@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Durkhan/.gradle/caches/transforms-3/c59ace6f780968c68634b37607b00cf2/transformed/preference-1.0.0/res/layout/preference_material.xml" value="0.125" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots-and-boxes Game/DotsAndBox/app/src/main/res/layout-sw600dp/activity_game.xml" value="0.26171875" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots-and-boxes Game/DotsAndBox/app/src/main/res/layout-sw600dp/activity_main.xml" value="0.26171875" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots-and-boxes Game/DotsAndBox/app/src/main/res/layout-sw600dp/common_ad_layout.xml" value="0.26171875" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots-and-boxes Game/DotsAndBox/app/src/main/res/layout-sw720dp/activity_game.xml" value="0.1046875" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots-and-boxes Game/DotsAndBox/app/src/main/res/layout-sw720dp/activity_main.xml" value="0.1046875" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots-and-boxes Game/DotsAndBox/app/src/main/res/layout-sw720dp/common_ad_layout.xml" value="0.1046875" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots-and-boxes Game/DotsAndBox/app/src/main/res/layout/activity_game.xml" value="0.13958333333333334" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots-and-boxes Game/DotsAndBox/app/src/main/res/layout/activity_history.xml" value="0.13958333333333334" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots-and-boxes Game/DotsAndBox/app/src/main/res/layout/activity_how_to.xml" value="0.13958333333333334" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots-and-boxes Game/DotsAndBox/app/src/main/res/layout/activity_main.xml" value="0.13958333333333334" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots-and-boxes Game/DotsAndBox/app/src/main/res/layout/common_ad_layout.xml" value="0.13958333333333334" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots-and-boxes Game/DotsAndBox/app/src/main/res/layout/common_toolbar_layout.xml" value="0.13958333333333334" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots/DotsAndBox/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2611111111111111" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots/DotsAndBox/app/src/main/res/drawable/background_difuculty.xml" value="0.14" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots/DotsAndBox/app/src/main/res/drawable/board_backgroud.xml" value="0.2574074074074074" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots/DotsAndBox/app/src/main/res/drawable/button_background.xml" value="0.2611111111111111" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots/DotsAndBox/app/src/main/res/drawable/card_view_background.xml" value="0.2574074074074074" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots/DotsAndBox/app/src/main/res/drawable/common_grey_border.xml" value="0.2574074074074074" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots/DotsAndBox/app/src/main/res/drawable/edittext_cursor.xml" value="0.2574074074074074" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots/DotsAndBox/app/src/main/res/drawable/home_screen_background.xml" value="0.2611111111111111" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots/DotsAndBox/app/src/main/res/drawable/ic_add_circle_outline_black_24dp.xml" value="0.2574074074074074" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots/DotsAndBox/app/src/main/res/drawable/ic_add_profile.xml" value="0.2611111111111111" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots/DotsAndBox/app/src/main/res/drawable/ic_dots.xml" value="0.2574074074074074" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots/DotsAndBox/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2611111111111111" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots/DotsAndBox/app/src/main/res/drawable/ic_pngwing_com.xml" value="0.2574074074074074" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots/DotsAndBox/app/src/main/res/drawable/ic_settings.xml" value="0.2611111111111111" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots/DotsAndBox/app/src/main/res/drawable/ic_share.xml" value="0.2611111111111111" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots/DotsAndBox/app/src/main/res/drawable/ic_share_black_24dp.xml" value="0.2611111111111111" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots/DotsAndBox/app/src/main/res/drawable/ic_sound_off.xml" value="0.1355" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots/DotsAndBox/app/src/main/res/drawable/ic_sound_on.xml" value="0.2611111111111111" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots/DotsAndBox/app/src/main/res/drawable/icon_circular.xml" value="0.2611111111111111" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots/DotsAndBox/app/src/main/res/drawable/icon_circular_white.xml" value="0.2574074074074074" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots/DotsAndBox/app/src/main/res/drawable/icon_circular_white1.xml" value="0.2574074074074074" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots/DotsAndBox/app/src/main/res/drawable/light_grey_border.xml" value="0.2611111111111111" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots/DotsAndBox/app/src/main/res/drawable/list_divider.xml" value="0.2611111111111111" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots/DotsAndBox/app/src/main/res/drawable/profile_b.xml" value="0.2574074074074074" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots/DotsAndBox/app/src/main/res/drawable/profile_background.xml" value="0.2574074074074074" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots/DotsAndBox/app/src/main/res/drawable/robot1.xml" value="0.15572916666666667" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots/DotsAndBox/app/src/main/res/drawable/selected_diffculty.xml" value="0.14" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots/DotsAndBox/app/src/main/res/drawable/settings_list_divider.xml" value="0.15572916666666667" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots/DotsAndBox/app/src/main/res/drawable/white_border.xml" value="0.2611111111111111" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots/DotsAndBox/app/src/main/res/layout-sw600dp/activity_game.xml" value="0.50390625" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots/DotsAndBox/app/src/main/res/layout-sw600dp/activity_main.xml" value="0.50390625" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots/DotsAndBox/app/src/main/res/layout-sw600dp/dialog_turn_selection.xml" value="0.26171875" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots/DotsAndBox/app/src/main/res/layout-sw600dp/fragment_game.xml" value="0.50390625" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots/DotsAndBox/app/src/main/res/layout-sw600dp/fragment_home.xml" value="0.10004275331338179" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots/DotsAndBox/app/src/main/res/layout-sw600dp/score_layout.xml" value="0.26171875" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots/DotsAndBox/app/src/main/res/layout-sw720dp/activity_main.xml" value="0.2015625" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots/DotsAndBox/app/src/main/res/layout-sw720dp/fragment_game.xml" value="0.2015625" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots/DotsAndBox/app/src/main/res/layout-sw720dp/fragment_home.xml" value="0.1" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots/DotsAndBox/app/src/main/res/layout/activity_game.xml" value="0.20606884057971014" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots/DotsAndBox/app/src/main/res/layout/activity_history.xml" value="0.20606884057971014" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots/DotsAndBox/app/src/main/res/layout/activity_how_to.xml" value="0.20606884057971014" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots/DotsAndBox/app/src/main/res/layout/activity_main.xml" value="0.21481481481481482" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots/DotsAndBox/app/src/main/res/layout/activity_privacy.xml" value="0.20606884057971014" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots/DotsAndBox/app/src/main/res/layout/activity_profile.xml" value="0.20606884057971014" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots/DotsAndBox/app/src/main/res/layout/activity_splash.xml" value="0.20606884057971014" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots/DotsAndBox/app/src/main/res/layout/choose_grid_menu.xml" value="0.13958333333333334" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots/DotsAndBox/app/src/main/res/layout/common_ad_layout.xml" value="0.20606884057971014" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots/DotsAndBox/app/src/main/res/layout/common_toolbar_layout.xml" value="0.26875" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots/DotsAndBox/app/src/main/res/layout/dialog_turn_selection.xml" value="0.2" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots/DotsAndBox/app/src/main/res/layout/fragment_exit_game.xml" value="0.26875" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots/DotsAndBox/app/src/main/res/layout/fragment_game.xml" value="0.26875" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots/DotsAndBox/app/src/main/res/layout/fragment_game_over.xml" value="0.26875" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots/DotsAndBox/app/src/main/res/layout/fragment_game_request.xml" value="0.26875" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots/DotsAndBox/app/src/main/res/layout/fragment_home.xml" value="0.2" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots/DotsAndBox/app/src/main/res/layout/fragment_no_play_game_service.xml" value="0.26875" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots/DotsAndBox/app/src/main/res/layout/fragment_player_name.xml" value="0.26875" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots/DotsAndBox/app/src/main/res/layout/fragment_result.xml" value="0.26875" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots/DotsAndBox/app/src/main/res/layout/fragment_won_lost.xml" value="0.26875" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots/DotsAndBox/app/src/main/res/layout/row_game_score.xml" value="0.26875" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots/DotsAndBox/app/src/main/res/layout/score_layout.xml" value="0.26875" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots/DotsAndBox/app/src/main/res/menu/choose_grid_size_menu.xml" value="0.26875" />
+        <entry key="..\:/Users/Durkhan/Downloads/dots/DotsAndBox/app/src/main/res/xml/pref_settings.xml" value="0.20606884057971014" />
+        <entry key="..\:/Users/Durkhan/Play store projects/DotsAndBox/app/src/main/res/layout-sw600dp/common_ad_layout.xml" value="0.50390625" />
+        <entry key="..\:/Users/Durkhan/Play store projects/DotsAndBox/app/src/main/res/layout-sw600dp/fragment_won_lost.xml" value="0.50390625" />
+        <entry key="..\:/Users/Durkhan/Play store projects/DotsAndBox/app/src/main/res/layout-sw600dp/score_layout.xml" value="0.50390625" />
+        <entry key="..\:/Users/Durkhan/Play store projects/DotsAndBox/app/src/main/res/layout-sw720dp/common_ad_layout.xml" value="0.2015625" />
+        <entry key="..\:/Users/Durkhan/Play store projects/DotsAndBox/app/src/main/res/layout-sw720dp/dialog_turn_selection.xml" value="0.2015625" />
+        <entry key="..\:/Users/Durkhan/Play store projects/DotsAndBox/app/src/main/res/layout/activity_main.xml" value="0.26875" />
+        <entry key="..\:/Users/Durkhan/Play store projects/DotsAndBox/app/src/main/res/layout/common_ad_layout.xml" value="0.26875" />
+        <entry key="..\:/Users/Durkhan/Play store projects/DotsAndBox/app/src/main/res/layout/dialog_turn_selection.xml" value="0.26875" />
+        <entry key="..\:/Users/Durkhan/Play store projects/DotsAndBox/app/src/main/res/layout/fragment_result.xml" value="0.26875" />
+        <entry key="..\:/Users/Durkhan/Play store projects/DotsAndBox/app/src/main/res/layout/fragment_won_lost.xml" value="0.26875" />
+        <entry key="..\:/Users/Durkhan/Play store projects/DotsAndBox/app/src/main/res/layout/row_game_score.xml" value="0.26875" />
+        <entry key="..\:/Users/Durkhan/Play store projects/DotsAndBox/app/src/main/res/layout/score_layout.xml" value="0.26875" />
+        <entry key="..\:/Users/Durkhan/Studi oProjects/DotsAndBox/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/Users/Durkhan/Studi oProjects/DotsAndBox/app/src/main/res/drawable/privacy_policy.xml" value="0.1" />
+        <entry key="..\:/Users/Durkhan/Studi oProjects/DotsAndBox/app/src/main/res/drawable/profile_background.xml" value="0.1" />
+        <entry key="..\:/Users/Durkhan/Studi oProjects/DotsAndBox/app/src/main/res/drawable/robot1.xml" value="0.1" />
+        <entry key="..\:/Users/Durkhan/Studi oProjects/DotsAndBox/app/src/main/res/layout-sw600dp/activity_main.xml" value="0.12666666666666668" />
+        <entry key="..\:/Users/Durkhan/Studi oProjects/DotsAndBox/app/src/main/res/layout-sw600dp/activity_profile.xml" value="0.12666666666666668" />
+        <entry key="..\:/Users/Durkhan/Studi oProjects/DotsAndBox/app/src/main/res/layout-sw600dp/common_toolbar_layout.xml" value="0.12666666666666668" />
+        <entry key="..\:/Users/Durkhan/Studi oProjects/DotsAndBox/app/src/main/res/layout-sw600dp/dialog_turn_selection.xml" value="0.3838141025641026" />
+        <entry key="..\:/Users/Durkhan/Studi oProjects/DotsAndBox/app/src/main/res/layout-sw600dp/fragment_exit_game.xml" value="0.3838141025641026" />
+        <entry key="..\:/Users/Durkhan/Studi oProjects/DotsAndBox/app/src/main/res/layout-sw600dp/fragment_game_request.xml" value="0.3838141025641026" />
+        <entry key="..\:/Users/Durkhan/Studi oProjects/DotsAndBox/app/src/main/res/layout-sw600dp/fragment_home.xml" value="0.3838141025641026" />
+        <entry key="..\:/Users/Durkhan/Studi oProjects/DotsAndBox/app/src/main/res/layout-sw600dp/fragment_player_name.xml" value="0.3838141025641026" />
+        <entry key="..\:/Users/Durkhan/Studi oProjects/DotsAndBox/app/src/main/res/layout-sw600dp/fragment_result.xml" value="0.3838141025641026" />
+        <entry key="..\:/Users/Durkhan/Studi oProjects/DotsAndBox/app/src/main/res/layout-sw600dp/fragment_won_lost.xml" value="0.3838141025641026" />
+        <entry key="..\:/Users/Durkhan/Studi oProjects/DotsAndBox/app/src/main/res/layout-sw600dp/row_game_score.xml" value="0.3838141025641026" />
+        <entry key="..\:/Users/Durkhan/Studi oProjects/DotsAndBox/app/src/main/res/layout-sw600dp/score_layout.xml" value="0.3838141025641026" />
+        <entry key="..\:/Users/Durkhan/Studi oProjects/DotsAndBox/app/src/main/res/layout-sw720dp/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Durkhan/Studi oProjects/DotsAndBox/app/src/main/res/layout-sw720dp/activity_profile.xml" value="0.1" />
+        <entry key="..\:/Users/Durkhan/Studi oProjects/DotsAndBox/app/src/main/res/layout-sw720dp/common_ad_layout.xml" value="0.1" />
+        <entry key="..\:/Users/Durkhan/Studi oProjects/DotsAndBox/app/src/main/res/layout-sw720dp/common_toolbar_layout.xml" value="0.1" />
+        <entry key="..\:/Users/Durkhan/Studi oProjects/DotsAndBox/app/src/main/res/layout-sw720dp/dialog_turn_selection.xml" value="0.14747536945812809" />
+        <entry key="..\:/Users/Durkhan/Studi oProjects/DotsAndBox/app/src/main/res/layout-sw720dp/fragment_exit_game.xml" value="0.14747536945812809" />
+        <entry key="..\:/Users/Durkhan/Studi oProjects/DotsAndBox/app/src/main/res/layout-sw720dp/fragment_game_request.xml" value="0.14747536945812809" />
+        <entry key="..\:/Users/Durkhan/Studi oProjects/DotsAndBox/app/src/main/res/layout-sw720dp/fragment_home.xml" value="0.14747536945812809" />
+        <entry key="..\:/Users/Durkhan/Studi oProjects/DotsAndBox/app/src/main/res/layout-sw720dp/fragment_player_name.xml" value="0.14747536945812809" />
+        <entry key="..\:/Users/Durkhan/Studi oProjects/DotsAndBox/app/src/main/res/layout-sw720dp/fragment_result.xml" value="0.14747536945812809" />
+        <entry key="..\:/Users/Durkhan/Studi oProjects/DotsAndBox/app/src/main/res/layout-sw720dp/fragment_won_lost.xml" value="0.14747536945812809" />
+        <entry key="..\:/Users/Durkhan/Studi oProjects/DotsAndBox/app/src/main/res/layout-sw720dp/row_game_score.xml" value="0.14747536945812809" />
+        <entry key="..\:/Users/Durkhan/Studi oProjects/DotsAndBox/app/src/main/res/layout-sw720dp/score_layout.xml" value="0.14747536945812809" />
+        <entry key="..\:/Users/Durkhan/Studi oProjects/DotsAndBox/app/src/main/res/layout/activity_history.xml" value="0.1" />
+        <entry key="..\:/Users/Durkhan/Studi oProjects/DotsAndBox/app/src/main/res/layout/activity_how_to.xml" value="0.1" />
+        <entry key="..\:/Users/Durkhan/Studi oProjects/DotsAndBox/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Durkhan/Studi oProjects/DotsAndBox/app/src/main/res/layout/activity_profile.xml" value="0.1" />
+        <entry key="..\:/Users/Durkhan/Studi oProjects/DotsAndBox/app/src/main/res/layout/activity_splash.xml" value="0.1" />
+        <entry key="..\:/Users/Durkhan/Studi oProjects/DotsAndBox/app/src/main/res/layout/common_ad_layout.xml" value="0.1" />
+        <entry key="..\:/Users/Durkhan/Studi oProjects/DotsAndBox/app/src/main/res/layout/common_toolbar_layout.xml" value="0.1" />
+        <entry key="..\:/Users/Durkhan/Studi oProjects/DotsAndBox/app/src/main/res/layout/dialog_turn_selection.xml" value="0.21693840579710144" />
+        <entry key="..\:/Users/Durkhan/Studi oProjects/DotsAndBox/app/src/main/res/layout/fragment_exit_game.xml" value="0.21693840579710144" />
+        <entry key="..\:/Users/Durkhan/Studi oProjects/DotsAndBox/app/src/main/res/layout/fragment_game_request.xml" value="0.21693840579710144" />
+        <entry key="..\:/Users/Durkhan/Studi oProjects/DotsAndBox/app/src/main/res/layout/fragment_home.xml" value="0.21693840579710144" />
+        <entry key="..\:/Users/Durkhan/Studi oProjects/DotsAndBox/app/src/main/res/layout/fragment_player_name.xml" value="0.21693840579710144" />
+        <entry key="..\:/Users/Durkhan/Studi oProjects/DotsAndBox/app/src/main/res/layout/fragment_result.xml" value="0.21693840579710144" />
+        <entry key="..\:/Users/Durkhan/Studi oProjects/DotsAndBox/app/src/main/res/layout/fragment_won_lost.xml" value="0.21693840579710144" />
+        <entry key="..\:/Users/Durkhan/Studi oProjects/DotsAndBox/app/src/main/res/layout/row_game_score.xml" value="0.21693840579710144" />
+        <entry key="..\:/Users/Durkhan/Studi oProjects/DotsAndBox/app/src/main/res/layout/score_layout.xml" value="0.21693840579710144" />
+        <entry key="..\:/Users/Durkhan/Studi oProjects/DotsAndBox/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+        <entry key="..\:/Users/Durkhan/Studi oProjects/DotsAndBox/app/src/main/res/xml/pref_settings.xml" value="0.21693840579710144" />
+        <entry key="..\:/Users/Ranu/Desktop/New folder (35)/dots-and-boxes/DotsAndBox/BaseGameUtils/src/main/res/drawable/ic_db_player_1.xml" value="0.1355" />
+        <entry key="..\:/Users/Ranu/Desktop/New folder (35)/dots-and-boxes/DotsAndBox/BaseGameUtils/src/main/res/drawable/ic_icon_cup.xml" value="0.1355" />
+        <entry key="..\:/Users/Ranu/Desktop/New folder (35)/dots-and-boxes/DotsAndBox/app/src/main/res/layout/activity_splash.xml" value="0.12228260869565218" />
+        <entry key="..\:/Users/Ranu/Desktop/New folder (35)/dots-and-boxes/DotsAndBox/app/src/main/res/xml/pref_settings.xml" value="0.125" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

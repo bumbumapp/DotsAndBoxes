@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/colorTitleBar</color>
+    <color name="colorPrimaryDark">@color/colorBackground</color>
+    <color name="colorAccent">#fff</color>
+    <color name="dark_blues">#6A0E7A</color>
+
+    <color name="colorTitleBar">#2d3844</color>
+    <color name="colorButton">#e84e60</color>
+    <color name="colorBackground">#222b36</color>
+
+
+    <color name="font_color_title">#ffffff</color>
+    <color name="font_color_title_small">#8daeff</color>
+    <color name="icon_color_white">#221f35</color>
+    <color name="line_color">#ffffff</color>
+
+
+    <color name="wonColor">#1cf021</color>
+    <color name="lostColor">#ed8a8f</color>
+    <color name="tieColor">#f57301</color>
+    <color name="yellow">#FFC107</color>
+    <color name="black_gray">#565656</color>
+    <color name="player1">#607D8B</color>
+    <color name="player2">#BDBDBD</color>
+    <color name="loader_bg">#BF2A323F</color>
+    <color name="line">#e58e21</color>
+    <color name="black">#111</color>
+    <color name="white">#ffffff</color>
+    <color name="dark_">#221f35</color>
+    <color name="back_profiles_result">#900BA6</color>
+    <color name="background_fragments">#C9BEDD</color>
+    <color name="background_fragmentssettings">#9A7AD3</color>
+</resources>
