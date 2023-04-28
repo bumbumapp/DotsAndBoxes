@@ -78,14 +78,38 @@
         <entry key="..\:/Users/Durkhan/Downloads/dots/DotsAndBox/app/src/main/res/layout/score_layout.xml" value="0.26875" />
         <entry key="..\:/Users/Durkhan/Downloads/dots/DotsAndBox/app/src/main/res/menu/choose_grid_size_menu.xml" value="0.26875" />
         <entry key="..\:/Users/Durkhan/Downloads/dots/DotsAndBox/app/src/main/res/xml/pref_settings.xml" value="0.20606884057971014" />
+        <entry key="..\:/Users/Durkhan/Play store projects/DotsAndBox/app/src/main/res/layout-sw600dp/activity_game.xml" value="0.50390625" />
+        <entry key="..\:/Users/Durkhan/Play store projects/DotsAndBox/app/src/main/res/layout-sw600dp/activity_main.xml" value="0.50390625" />
+        <entry key="..\:/Users/Durkhan/Play store projects/DotsAndBox/app/src/main/res/layout-sw600dp/activity_profile.xml" value="0.50390625" />
         <entry key="..\:/Users/Durkhan/Play store projects/DotsAndBox/app/src/main/res/layout-sw600dp/common_ad_layout.xml" value="0.50390625" />
+        <entry key="..\:/Users/Durkhan/Play store projects/DotsAndBox/app/src/main/res/layout-sw600dp/common_toolbar_layout.xml" value="0.2392578125" />
+        <entry key="..\:/Users/Durkhan/Play store projects/DotsAndBox/app/src/main/res/layout-sw600dp/fragment_home.xml" value="0.50390625" />
+        <entry key="..\:/Users/Durkhan/Play store projects/DotsAndBox/app/src/main/res/layout-sw600dp/fragment_result.xml" value="0.2392578125" />
         <entry key="..\:/Users/Durkhan/Play store projects/DotsAndBox/app/src/main/res/layout-sw600dp/fragment_won_lost.xml" value="0.50390625" />
         <entry key="..\:/Users/Durkhan/Play store projects/DotsAndBox/app/src/main/res/layout-sw600dp/score_layout.xml" value="0.50390625" />
+        <entry key="..\:/Users/Durkhan/Play store projects/DotsAndBox/app/src/main/res/layout-sw720dp/activity_game.xml" value="0.2015625" />
+        <entry key="..\:/Users/Durkhan/Play store projects/DotsAndBox/app/src/main/res/layout-sw720dp/activity_main.xml" value="0.2015625" />
+        <entry key="..\:/Users/Durkhan/Play store projects/DotsAndBox/app/src/main/res/layout-sw720dp/activity_profile.xml" value="0.2015625" />
         <entry key="..\:/Users/Durkhan/Play store projects/DotsAndBox/app/src/main/res/layout-sw720dp/common_ad_layout.xml" value="0.2015625" />
         <entry key="..\:/Users/Durkhan/Play store projects/DotsAndBox/app/src/main/res/layout-sw720dp/dialog_turn_selection.xml" value="0.2015625" />
+        <entry key="..\:/Users/Durkhan/Play store projects/DotsAndBox/app/src/main/res/layout-sw720dp/fragment_game.xml" value="0.2015625" />
+        <entry key="..\:/Users/Durkhan/Play store projects/DotsAndBox/app/src/main/res/layout/activity_game.xml" value="0.26875" />
+        <entry key="..\:/Users/Durkhan/Play store projects/DotsAndBox/app/src/main/res/layout/activity_history.xml" value="0.26875" />
+        <entry key="..\:/Users/Durkhan/Play store projects/DotsAndBox/app/src/main/res/layout/activity_how_to.xml" value="0.26875" />
         <entry key="..\:/Users/Durkhan/Play store projects/DotsAndBox/app/src/main/res/layout/activity_main.xml" value="0.26875" />
+        <entry key="..\:/Users/Durkhan/Play store projects/DotsAndBox/app/src/main/res/layout/activity_privacy.xml" value="0.26875" />
+        <entry key="..\:/Users/Durkhan/Play store projects/DotsAndBox/app/src/main/res/layout/activity_profile.xml" value="0.26875" />
+        <entry key="..\:/Users/Durkhan/Play store projects/DotsAndBox/app/src/main/res/layout/activity_splash.xml" value="0.26875" />
         <entry key="..\:/Users/Durkhan/Play store projects/DotsAndBox/app/src/main/res/layout/common_ad_layout.xml" value="0.26875" />
+        <entry key="..\:/Users/Durkhan/Play store projects/DotsAndBox/app/src/main/res/layout/common_toolbar_layout.xml" value="0.26875" />
         <entry key="..\:/Users/Durkhan/Play store projects/DotsAndBox/app/src/main/res/layout/dialog_turn_selection.xml" value="0.26875" />
+        <entry key="..\:/Users/Durkhan/Play store projects/DotsAndBox/app/src/main/res/layout/fragment_exit_game.xml" value="0.26875" />
+        <entry key="..\:/Users/Durkhan/Play store projects/DotsAndBox/app/src/main/res/layout/fragment_game.xml" value="0.12760416666666666" />
+        <entry key="..\:/Users/Durkhan/Play store projects/DotsAndBox/app/src/main/res/layout/fragment_game_over.xml" value="0.26875" />
+        <entry key="..\:/Users/Durkhan/Play store projects/DotsAndBox/app/src/main/res/layout/fragment_game_request.xml" value="0.26875" />
+        <entry key="..\:/Users/Durkhan/Play store projects/DotsAndBox/app/src/main/res/layout/fragment_home.xml" value="0.26875" />
+        <entry key="..\:/Users/Durkhan/Play store projects/DotsAndBox/app/src/main/res/layout/fragment_no_play_game_service.xml" value="0.26875" />
+        <entry key="..\:/Users/Durkhan/Play store projects/DotsAndBox/app/src/main/res/layout/fragment_player_name.xml" value="0.26875" />
         <entry key="..\:/Users/Durkhan/Play store projects/DotsAndBox/app/src/main/res/layout/fragment_result.xml" value="0.26875" />
         <entry key="..\:/Users/Durkhan/Play store projects/DotsAndBox/app/src/main/res/layout/fragment_won_lost.xml" value="0.26875" />
         <entry key="..\:/Users/Durkhan/Play store projects/DotsAndBox/app/src/main/res/layout/row_game_score.xml" value="0.26875" />

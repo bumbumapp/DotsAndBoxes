@@ -38,6 +38,7 @@ import com.dotsandboxes.event_bus.events.TurnChangeEvent;
 import com.dotsandboxes.game.controllers.Game;
 import com.dotsandboxes.game.controllers.PlayerBot;
 import com.dotsandboxes.game.models.Edge;
+import com.dotsandboxes.utils.AdsLoader;
 import com.dotsandboxes.utils.Constants;
 import com.dotsandboxes.utils.CountDownTimerWithPause;
 import com.dotsandboxes.utils.Globals;
@@ -168,7 +169,7 @@ public class GameFragment extends Fragment {
         super.onCreate(savedInstanceState);
 
         prefUtils = new PrefUtils(getActivity());
-
+         AdsLoader.loadInterstitial(requireContext());
         playerNameMeFromPreference = prefUtils.getString(Constants.prefrences.NAME);
 
         Timber.e("\n \n Name = " + playerNameMeFromPreference);
@@ -202,7 +203,6 @@ public class GameFragment extends Fragment {
         SharedPreferences sharedPrefSoound = PreferenceManager.getDefaultSharedPreferences(getContext());
         shouldSound = sharedPrefSoound.getBoolean(getContext().getString(R.string.pref_key_sound), true);
 
-        loadInterstitialads();
 
         // RxBus
         initBusSubscription();
@@ -497,16 +497,9 @@ public class GameFragment extends Fragment {
                             Bundle args = loadGameResultFragment();
 
                             if (mListener != null) {
-                                if (Globals.TIMER_FINISHED) {
-                                    if (mInterstitialAd != null) {
-                                        mInterstitialAd.show(requireActivity());
-                                        stopAds(args);
-                                    }else {
+
                                         mListener.onWinFragmentLoad(ResultFragment.FRAGMENT_ID, args);
-                                    }
-                                }else {
-                                        mListener.onWinFragmentLoad(ResultFragment.FRAGMENT_ID, args);
-                                    }
+
 
                                 }
 
@@ -524,64 +517,7 @@ public class GameFragment extends Fragment {
                     }
                 });
     }
-    private void loadInterstitialads() {
-        AdRequest adRequest = new AdRequest.Builder().build();
 
-        InterstitialAd.load(requireContext(),getString(R.string.interstitial_id), adRequest,
-                new InterstitialAdLoadCallback() {
-                    @Override
-                    public void onAdLoaded(@NonNull InterstitialAd interstitialAd) {
-                        // The mInterstitialAd reference will be null until
-                        // an ad is loaded.
-                        mInterstitialAd = interstitialAd;
-                        Log.i(TAG, "onAdLoaded");
-                    }
-
-                    @Override
-                    public void onAdFailedToLoad(@NonNull LoadAdError loadAdError) {
-                        // Handle the error
-                        Log.d(TAG, loadAdError.toString());
-                        mInterstitialAd = null;
-                    }
-                });
-    }
-    private void stopAds(Bundle args) {
-        mInterstitialAd.setFullScreenContentCallback(new FullScreenContentCallback(){
-            @Override
-            public void onAdClicked() {
-                // Called when a click is recorded for an ad.
-                Log.d(TAG, "Ad was clicked.");
-            }
-
-            @Override
-            public void onAdDismissedFullScreenContent() {
-                mListener.onWinFragmentLoad(ResultFragment.FRAGMENT_ID, args);
-                loadInterstitialads();
-                Timers.timer().start();
-                Globals.TIMER_FINISHED=false;
-                mInterstitialAd=null;
-            }
-
-            @Override
-            public void onAdFailedToShowFullScreenContent(AdError adError) {
-                // Called when ad fails to show.
-                Log.e(TAG, "Ad failed to show fullscreen content.");
-                mInterstitialAd = null;
-            }
-
-            @Override
-            public void onAdImpression() {
-                // Called when an impression is recorded for an ad.
-                Log.d(TAG, "Ad recorded an impression.");
-            }
-
-            @Override
-            public void onAdShowedFullScreenContent() {
-                // Called when ad is shown.
-                Log.d(TAG, "Ad showed fullscreen content.");
-            }
-        });
-    }
 
     public void makeMove(int startDot, int endDot) {
         int boxesCompleted = game.makeAMove(startDot, endDot);

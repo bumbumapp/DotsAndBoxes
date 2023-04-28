@@ -23,13 +23,9 @@ import com.bumptech.glide.request.RequestOptions;
 import com.dotsandboxes.R;
 import com.dotsandboxes.services.MusicPlayerService;
 import com.dotsandboxes.services.MusicService;
-import com.dotsandboxes.utils.AdsWrapper;
-import com.dotsandboxes.utils.Constants;
+
 import com.dotsandboxes.utils.PrefUtils;
 
-
-import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
 
 import androidx.annotation.NonNull;
@@ -52,7 +48,6 @@ public abstract class MusicPlayerActivity extends AppCompatActivity {
     private static final int RC_INVITATION_INBOX = 9008;
     public MusicPlayerService mService;
     public boolean doubleBackToExitPressedOnce;
-    public AdsWrapper adsWrapper;
     public PrefUtils prefUtils;
     boolean serviceBound = false;
     // The currently signed in account, used to check the account has changed outside of this activity when resuming.

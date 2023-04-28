@@ -331,7 +331,7 @@
             </LinearLayout>
         </LinearLayout>
 
-    <include layout="@layout/common_ad_layout" />
+
 
 
 </LinearLayout>

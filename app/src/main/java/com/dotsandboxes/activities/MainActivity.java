@@ -656,8 +656,6 @@ public class MainActivity extends MusicPlayerActivity implements PlayerNameFragm
         if (mIsStateAlreadySaved) {
             mPendingShowDialog = true;
         } else {
-
-
             if (fragmentId == ResultFragment.FRAGMENT_ID) {
                 int scorePlayer1 = args.getInt(GameFragment.ARG_PLAYER1_SCORE);
                 int scorePlayer2 = args.getInt(GameFragment.ARG_PLAYER2_SCORE);

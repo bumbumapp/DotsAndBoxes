@@ -1,11 +1,14 @@
 package com.dotsandboxes.fragments;
 
 
+import static android.content.ContentValues.TAG;
+
 import android.content.Context;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,7 +17,17 @@ import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.dotsandboxes.R;
+import com.dotsandboxes.Timers;
+import com.dotsandboxes.utils.AdsLoader;
+import com.dotsandboxes.utils.Globals;
+import com.google.android.gms.ads.AdError;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.FullScreenContentCallback;
+import com.google.android.gms.ads.LoadAdError;
+import com.google.android.gms.ads.interstitial.InterstitialAd;
+import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
 import butterknife.BindView;
@@ -94,13 +107,66 @@ public class PlayerNameFragment extends DialogFragment {
         } else if (player1Name.equalsIgnoreCase(player2Name)) {
             Toast.makeText(getActivity(), getString(R.string.should_not_same), Toast.LENGTH_SHORT).show();
         } else {
-            if (mListener != null) {
-                mListener.onPlayClicked(player1Name, player2Name);
-                dismiss();
+            if (Globals.TIMER_FINISHED) {
+                if (AdsLoader.mInterstitialAd != null) {
+                    AdsLoader.mInterstitialAd.show(requireActivity());
+                    stopAds(mListener, player1Name, player2Name);
+                }else {
+                    dismissDialog(mListener, player1Name, player2Name);
+                }
+            }else {
+                dismissDialog(mListener, player1Name, player2Name);
             }
+
         }
 
     }
+
+    private void stopAds(OnFragmentInteractionListener mListener, String player1Name, String player2Name) {
+        AdsLoader.mInterstitialAd.setFullScreenContentCallback(new FullScreenContentCallback(){
+            @Override
+            public void onAdClicked() {
+                // Called when a click is recorded for an ad.
+                Log.d(TAG, "Ad was clicked.");
+            }
+
+            @Override
+            public void onAdDismissedFullScreenContent() {
+                Timers.timer().start();
+                Globals.TIMER_FINISHED=false;
+                AdsLoader.mInterstitialAd=null;
+                dismissDialog(mListener, player1Name, player2Name);
+            }
+
+            @Override
+            public void onAdFailedToShowFullScreenContent(AdError adError) {
+                // Called when ad fails to show.
+                Log.e(TAG, "Ad failed to show fullscreen content.");
+                AdsLoader.mInterstitialAd = null;
+            }
+
+            @Override
+            public void onAdImpression() {
+                // Called when an impression is recorded for an ad.
+                Log.d(TAG, "Ad recorded an impression.");
+            }
+
+            @Override
+            public void onAdShowedFullScreenContent() {
+                // Called when ad is shown.
+                Log.d(TAG, "Ad showed fullscreen content.");
+            }
+        });
+
+    }
+
+    private void dismissDialog(OnFragmentInteractionListener mListener, String player1Name, String player2Name) {
+        if (mListener != null) {
+            mListener.onPlayClicked(player1Name, player2Name);
+            dismiss();
+        }
+    }
+
 
     public interface OnFragmentInteractionListener {
         void onPlayClicked(String player1Name, String player2Name);
