@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "382001764712",
+    "project_id": "dots-and-boxes-a8a0c",
+    "storage_bucket": "dots-and-boxes-a8a0c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:382001764712:android:0850f74d20e545ad7b9edd",
+        "android_client_info": {
+          "package_name": "com.bumbumapps.dotsandboxespro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "382001764712-es44butut90bv6abccimn9jtb06jmcb4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAshld0M_whCVudKgYsM_NYXeN3cV-03H8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "382001764712-es44butut90bv6abccimn9jtb06jmcb4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

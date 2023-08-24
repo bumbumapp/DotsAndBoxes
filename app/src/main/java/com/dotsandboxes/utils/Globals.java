@@ -7,5 +7,5 @@ import android.graphics.Typeface;
  */
 public class Globals {
     public static Typeface kgTrueColors;
-    public static boolean TIMER_FINISHED=false;
+    public static boolean TIMER_FINISHED=true;
 }

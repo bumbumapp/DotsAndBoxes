@@ -42,6 +42,7 @@ import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.initialization.InitializationStatus;
 import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
+import com.google.firebase.crashlytics.FirebaseCrashlytics;
 import com.tuyenmonkey.mkloader.MKLoader;
 
 import androidx.appcompat.app.AlertDialog;
@@ -161,13 +162,13 @@ public class MainActivity extends MusicPlayerActivity implements PlayerNameFragm
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        FirebaseCrashlytics.getInstance().setCrashlyticsCollectionEnabled(true);
         ButterKnife.bind(this);
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
         commonToolbar.setVisibility(View.GONE);
         dialogRepeat = new Dialog(this);
         addFragment(new HomeFragment(true), false);
         loadBanners();
-        Timers.timer().start();
     }
 
     @Override
@@ -568,27 +569,6 @@ public class MainActivity extends MusicPlayerActivity implements PlayerNameFragm
         final boolean hasMusic = preferences.getBoolean(getString(R.string.pref_key_music), true);
         final boolean hasSound = preferences.getBoolean(getString(R.string.pref_key_sound), false);
         final boolean hasVibrate = preferences.getBoolean(getString(R.string.pref_key_vibrate), false);
-
-      /*  ivToolbarVibrate.setColorFilter(ContextCompat.getColor(MainActivity.this, R.color.icon_color_white));
-        ivToolbarMusic.setColorFilter(ContextCompat.getColor(MainActivity.this, R.color.icon_color_white));
-        ivToolbarSound.setColorFilter(ContextCompat.getColor(MainActivity.this, R.color.icon_color_white));*/
-   /*     if (hasMusic) {
-            ivToolbarSound.setImageDrawable(getResources().getDrawable(R.drawable.music_icon));
-        } else {
-            ivToolbarSound.setImageDrawable(getResources().getDrawable(R.drawable.musicoff));
-        }
-
-        if (hasSound) {
-            ivToolbarMusic.setImageDrawable(getResources().getDrawable(R.drawable.sound_icon));
-        } else {
-            ivToolbarMusic.setImageDrawable(getResources().getDrawable(R.drawable.sound_off));
-        }
-
-        if (hasVibrate) {
-            ivToolbarVibrate.setImageDrawable(getResources().getDrawable(R.drawable.vibrate_icon));
-        } else {
-            ivToolbarVibrate.setImageDrawable(getResources().getDrawable(R.drawable.vibrateoff));
-        }*/
 
         if (hasMusic) {
             ivToolbarSound.setAlpha(1f);
