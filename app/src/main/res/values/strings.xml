@@ -8,8 +8,8 @@
 <!--demo-->
     <!--admob test id-->
     <string name="ad_mob_id" translatable="false">ca-app-pub-8444865753152507~7746356368</string>
-    <string name="banner_id" translatable="false">ca-app-pub-8444865753152507/4079408241</string>
-    <string name="interstitial_id" translatable="false">ca-app-pub-8444865753152507/3232396280</string>
+    <string name="banner_id" translatable="false">ca-app-pub-8444865753152507/2507521522</string>
+    <string name="interstitial_id" translatable="false">ca-app-pub-8444865753152507/8130511156</string>
 
 
     <string name="app_name">Dots and Boxes</string>

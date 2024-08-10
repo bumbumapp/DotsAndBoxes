@@ -168,7 +168,7 @@ public class MainActivity extends MusicPlayerActivity implements PlayerNameFragm
         commonToolbar.setVisibility(View.GONE);
         dialogRepeat = new Dialog(this);
         addFragment(new HomeFragment(true), false);
-        loadBanners();
+//        loadBanners();
     }
 
     @Override
@@ -178,14 +178,14 @@ public class MainActivity extends MusicPlayerActivity implements PlayerNameFragm
     }
     private void loadBanners() {
 
-        MobileAds.initialize(this, new OnInitializationCompleteListener() {
-            @Override
-            public void onInitializationComplete(InitializationStatus initializationStatus) {
-            }
-        });
-        AdView mAdView = findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
+//        MobileAds.initialize(this, new OnInitializationCompleteListener() {
+//            @Override
+//            public void onInitializationComplete(InitializationStatus initializationStatus) {
+//            }
+//        });
+//        AdView mAdView = findViewById(R.id.adView);
+//        AdRequest adRequest = new AdRequest.Builder().build();
+//        mAdView.loadAd(adRequest);
     }
 
     @Override
