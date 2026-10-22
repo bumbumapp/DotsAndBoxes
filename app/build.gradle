@@ -1,118 +1,108 @@
 apply plugin: 'com.android.application'
-apply plugin:  'com.google.gms.google-services'
-apply plugin:  'com.google.firebase.crashlytics'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'
+
 android {
-    compileSdkVersion 34
+    namespace 'com.dotsandboxes'
+    compileSdk 36
 
     defaultConfig {
         applicationId "com.bumbumapps.dotsandboxespro"
-        minSdkVersion 21
-        targetSdkVersion 34
-        versionCode 10
-        versionName "1.1.8"
+        minSdk 24
+        targetSdk 36
+        versionCode 11
+        versionName "1.2.0"
         multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-
     }
 
+    buildFeatures {
+        buildConfig true
+        resValues true
+    }
 
     buildTypes {
+        debug {
+            // Google's public test IDs so debug builds never request real ads.
+            resValue 'string', 'ad_mob_id', 'ca-app-pub-3940256099942544~3347511713'
+            resValue 'string', 'banner_id', 'ca-app-pub-3940256099942544/9214589741'
+            resValue 'string', 'interstitial_id', 'ca-app-pub-3940256099942544/1033173712'
+        }
         release {
+            // Real AdMob IDs (AdMob app "Dots and Boxes").
+            resValue 'string', 'ad_mob_id', 'ca-app-pub-8444865753152507~7746356368'
+            resValue 'string', 'banner_id', 'ca-app-pub-8444865753152507/2507521522'
+            resValue 'string', 'interstitial_id', 'ca-app-pub-8444865753152507/8130511156'
             minifyEnabled false
-            debuggable false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
     compileOptions {
-        sourceCompatibility = '1.8'
-        targetCompatibility = '1.8'
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    lint {
+        abortOnError false
+        checkReleaseBuilds false
     }
 }
-
-
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-
-    implementation "androidx.appcompat:appcompat:1.3.1"
+    implementation 'androidx.appcompat:appcompat:1.7.1'
+    implementation 'androidx.activity:activity:1.10.1'
+    implementation 'androidx.fragment:fragment:1.8.9'
+    implementation 'androidx.core:core:1.17.0'
+    implementation 'androidx.media:media:1.7.1'
     implementation "androidx.constraintlayout:constraintlayout:$constraintlayout"
     implementation "androidx.preference:preference:$preference"
     implementation "androidx.cardview:cardview:$cardview"
     implementation "androidx.recyclerview:recyclerview:$recyclerview"
-    implementation "androidx.legacy:legacy-support-core-utils:$support_utils"
-    implementation 'com.google.android.material:material:1.1.0-alpha06'
-    implementation "androidx.vectordrawable:vectordrawable:$vector_drawable"
-    implementation "androidx.legacy:legacy-support-v4:$support_v4"
+    implementation 'com.google.android.material:material:1.13.0'
 
     // RxJava
-    implementation "io.reactivex:rxjava:$rxjava_version"
-    implementation "io.reactivex:rxandroid:$rxandroid_version"
+    implementation 'io.reactivex:rxjava:1.3.8'
+    implementation 'io.reactivex:rxandroid:1.2.1'
 
-    //Image Loading
-    implementation 'com.github.bumptech.glide:glide:4.8.0'
-    //noinspection GradleCompatible
-    implementation 'com.android.support:appcompat-v7:28.0.0'
-    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
-    //noinspection GradleCompatible
-    implementation 'com.android.support:support-v4:28.0.0'
-    annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
+    // Image loading
+    implementation 'com.github.bumptech.glide:glide:4.16.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.16.0'
 
-    //support library
-    implementation 'androidx.appcompat:appcompat:1.1.0-alpha04'
-    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
-    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-
-    //room database
+    // Room database
     implementation "androidx.room:room-runtime:$room"
     annotationProcessor "androidx.room:room-compiler:$room"
 
-    //sdp and ssp
+    // sdp and ssp
     implementation 'com.intuit.sdp:sdp-android:1.0.6'
     implementation 'com.intuit.ssp:ssp-android:1.0.6'
 
-    //butterknife
-    implementation 'com.jakewharton:butterknife:10.0.0'
-    annotationProcessor 'com.jakewharton:butterknife-compiler:10.0.0'
+    // butterknife
+    implementation 'com.jakewharton:butterknife:10.2.3'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.3'
 
-    //timber
-    implementation 'com.jakewharton.timber:timber:4.7.1'
+    implementation 'com.jakewharton.timber:timber:5.0.1'
+    implementation 'com.google.code.gson:gson:2.13.1'
 
-    //Gson
-    implementation 'com.google.code.gson:gson:2.8.5'
-
-    //cropper for image picker
-    implementation 'com.theartofdev.edmodo:android-image-cropper:2.1.3'
-
-// animation
+    // animation
     implementation 'com.eftimoff:androidplayer:1.0.3@aar'
     implementation 'com.nineoldandroids:library:2.4.0'
-    implementation "com.airbnb.android:lottie:$lottieVersion"
 
+    // ads + consent
+    implementation 'com.google.android.gms:play-services-ads:25.5.0'
+    implementation 'com.google.android.ump:user-messaging-platform:4.0.0'
 
-    implementation 'com.google.android.gms:play-services-ads:21.5.0'
+    // loader
+    implementation('com.tuyenmonkey:mkloader:1.4.0') {
+        // Its classes do not use the old support library (checked); AndroidX already provides it.
+        exclude group: 'com.android.support'
+    }
 
+    implementation platform('com.google.firebase:firebase-bom:35.1.0')
+    implementation 'com.google.firebase:firebase-crashlytics'
+    implementation 'com.google.firebase:firebase-analytics'
 
-
-
-    //loader
-    implementation 'com.tuyenmonkey:mkloader:1.4.0'
-
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test:runner:1.1.1'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
-    implementation 'androidx.core:core-ktx:1.3.2'
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-
-    implementation platform('com.google.firebase:firebase-bom:31.2.2')
-
-    // Add the dependencies for the Crashlytics and Analytics libraries
-    // When using the BoM, you don't specify versions in Firebase library dependencies
-    implementation 'com.google.firebase:firebase-crashlytics-ktx'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test:runner:1.7.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.7.0'
 }
-
-repositories {
-    mavenCentral()
-}
-
-
