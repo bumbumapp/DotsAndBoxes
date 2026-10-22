@@ -21,8 +21,8 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.dotsandboxes.AdsHelper;
 import com.dotsandboxes.R;
-import com.dotsandboxes.Timers;
 import com.dotsandboxes.event_bus.RxBus;
 import com.dotsandboxes.event_bus.events.EmitSoundEvent;
 import com.dotsandboxes.fragments.ChooseTurnFragment;
@@ -38,7 +38,6 @@ import com.dotsandboxes.services.MusicPlayerService;
 import com.dotsandboxes.utils.Constants;
 import com.dotsandboxes.utils.PrefUtils;
 import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.initialization.InitializationStatus;
 import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
@@ -142,7 +141,7 @@ public class MainActivity extends MusicPlayerActivity implements PlayerNameFragm
 
         @Override
         public void onServiceDisconnected(ComponentName name) {
-            startService(new Intent(MusicPlayerService.ACTION_STOP_MUSIC));
+            // Implicit service intents throw IllegalArgumentException on API 21+; nothing to stop here.
             serviceBound = false;
         }
     };
@@ -168,7 +167,8 @@ public class MainActivity extends MusicPlayerActivity implements PlayerNameFragm
         commonToolbar.setVisibility(View.GONE);
         dialogRepeat = new Dialog(this);
         addFragment(new HomeFragment(true), false);
-//        loadBanners();
+        // UMP consent first; the Mobile Ads SDK starts and the interstitial is preloaded only after it.
+        AdsHelper.gatherConsent(this, () -> AdsHelper.preloadInterstitial(this, getString(R.string.interstitial_id)));
     }
 
     @Override

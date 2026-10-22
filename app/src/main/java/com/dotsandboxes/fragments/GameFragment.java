@@ -24,7 +24,6 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.dotsandboxes.R;
-import com.dotsandboxes.Timers;
 import com.dotsandboxes.activities.MainActivity;
 import com.dotsandboxes.event_bus.RxBus;
 import com.dotsandboxes.event_bus.events.BotComputeEvent;
@@ -38,15 +37,13 @@ import com.dotsandboxes.event_bus.events.TurnChangeEvent;
 import com.dotsandboxes.game.controllers.Game;
 import com.dotsandboxes.game.controllers.PlayerBot;
 import com.dotsandboxes.game.models.Edge;
-import com.dotsandboxes.utils.AdsLoader;
+import com.dotsandboxes.AdsHelper;
 import com.dotsandboxes.utils.Constants;
 import com.dotsandboxes.utils.CountDownTimerWithPause;
 import com.dotsandboxes.utils.Globals;
 import com.dotsandboxes.utils.PrefUtils;
 import com.dotsandboxes.views.BoardView;
-import com.google.android.gms.ads.AdError;
 import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.FullScreenContentCallback;
 import com.google.android.gms.ads.LoadAdError;
 import com.google.android.gms.ads.interstitial.InterstitialAd;
 import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback;
@@ -169,7 +166,6 @@ public class GameFragment extends Fragment {
         super.onCreate(savedInstanceState);
 
         prefUtils = new PrefUtils(getActivity());
-         AdsLoader.loadInterstitial(requireContext());
         playerNameMeFromPreference = prefUtils.getString(Constants.prefrences.NAME);
 
         Timber.e("\n \n Name = " + playerNameMeFromPreference);

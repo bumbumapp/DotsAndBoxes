@@ -58,7 +58,7 @@ public class SettingsFragment extends PreferenceFragmentCompat /*implements Pref
 
         @Override
         public void onServiceDisconnected(ComponentName name) {
-            getActivity().startService(new Intent(MusicPlayerService.ACTION_STOP_MUSIC));
+            // Implicit service intents throw IllegalArgumentException on API 21+; nothing to stop here.
             serviceBound = false;
         }
     };

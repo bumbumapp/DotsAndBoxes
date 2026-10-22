@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:dist="http://schemas.android.com/apk/distribution"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.dotsandboxes">
+    xmlns:tools="http://schemas.android.com/tools">
 
     <dist:module dist:instant="true" />
     <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
@@ -11,11 +10,11 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
 
 
     <application
         android:name=".DotsAndBoxesApplication"
+        android:enableOnBackInvokedCallback="false"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -38,22 +37,23 @@
         <activity
             android:name=".activities.MainActivity"
             android:screenOrientation="portrait"
+            android:exported="false"
             android:windowSoftInputMode="stateAlwaysHidden|adjustResize" /> <!-- Game Activity -->
 
         <service
             android:name=".services.MusicService"
             android:enabled="true"
-            android:screenOrientation="portrait" />
+            android:exported="false" />
 
         <service
             android:name=".services.MusicPlayerService"
             android:enabled="true"
-            android:screenOrientation="portrait" />
+            android:exported="false" />
 
 
 
         <receiver android:name=".views.MusicIntentReceiver"
-            android:exported="true">
+            android:exported="false">
             <intent-filter>
                 <action android:name="android.media.AUDIO_BECOMING_NOISY" />
             </intent-filter>

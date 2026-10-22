@@ -29,7 +29,7 @@ import com.dotsandboxes.R;
 import com.dotsandboxes.activities.MainActivity;
 import com.dotsandboxes.activities.MusicPlayerActivity;
 import com.dotsandboxes.services.MusicPlayerService;
-import com.dotsandboxes.utils.AdsLoader;
+import com.dotsandboxes.AdsHelper;
 import com.dotsandboxes.utils.Constants;
 import com.dotsandboxes.utils.PrefUtils;
 import com.eftimoff.androidplayer.Player;
@@ -404,7 +404,7 @@ public class HomeFragment extends Fragment {
                 then().animate(howTo).
                 play();
 
-        AdsLoader.loadInterstitial(requireActivity());
+        AdsHelper.preloadInterstitial(requireActivity(), getString(R.string.interstitial_id));
 
     }
 

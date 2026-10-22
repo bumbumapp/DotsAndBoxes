@@ -97,7 +97,7 @@ public abstract class MusicPlayerActivity extends AppCompatActivity {
 
         @Override
         public void onServiceDisconnected(ComponentName name) {
-            startService(new Intent(MusicPlayerService.ACTION_STOP_MUSIC));
+            // Implicit service intents throw IllegalArgumentException on API 21+; nothing to stop here.
             serviceBound = false;
         }
     };

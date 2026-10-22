@@ -24,9 +24,6 @@ import com.bumptech.glide.request.RequestOptions;
 import com.dotsandboxes.DotsAndBoxesApplication;
 import com.dotsandboxes.R;
 import com.dotsandboxes.activities.MainActivity;
-import com.dotsandboxes.imagepicker.ImagePickerCallback;
-import com.dotsandboxes.imagepicker.ImagePickerFragment;
-import com.dotsandboxes.imagepicker.MarshMallowHelper;
 import com.dotsandboxes.utils.Constants;
 import com.dotsandboxes.utils.PrefUtils;
 

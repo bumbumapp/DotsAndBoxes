@@ -14,6 +14,7 @@ public class DotsAndBoxesApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+        registerActivityLifecycleCallbacks(new EdgeToEdgeCallbacks());
         Timber.plant(new Timber.DebugTree());
 
         db = Room.databaseBuilder(getApplicationContext(),

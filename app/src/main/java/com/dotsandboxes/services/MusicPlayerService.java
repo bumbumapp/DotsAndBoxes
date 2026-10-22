@@ -408,10 +408,8 @@ public class MusicPlayerService extends Service implements MediaPlayer.OnComplet
      * To register Becoming noisy receiver
      */
     private void registerBecomingNoisyReceiver() {
-        //register after getting audio focus
-        IntentFilter intentFilter = new IntentFilter(AudioManager.ACTION_AUDIO_BECOMING_NOISY);
-        intentFilter.addAction(Intent.ACTION_HEADSET_PLUG);
-        registerReceiver(becomingNoisyReceiver, intentFilter);
+        // becomingNoisyReceiver was never instantiated (registering null only queried sticky
+        // broadcasts); AUDIO_BECOMING_NOISY is handled by the audio focus logic instead.
     }
 
 
