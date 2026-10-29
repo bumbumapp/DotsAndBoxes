@@ -1,475 +1,432 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<!-- Bento (dark) home: header, board size row, "vs Robot" hero with difficulty, "vs Friend" tile, tool tiles. -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background_fragmentssettings"
-    android:orientation="vertical"
-    tools:context=".activities.MainActivity">
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/_10sdp"
-        android:paddingEnd="@dimen/_16sdp"
-        android:paddingStart="@dimen/_16sdp"
-        android:layout_marginTop="@dimen/_16sdp"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:id="@+id/btn_share"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:scaleType="centerCrop"
-            android:src="@drawable/share" />
-
-        <ImageView
-            android:id="@+id/btn_music"
-            android:layout_width="@dimen/_45sdp"
-            android:layout_height="@dimen/_45sdp"
-            android:layout_centerInParent="true"
-            android:scaleType="fitCenter"
-            android:src="@drawable/volumoff" />
-
-        <ImageView
-            android:id="@+id/btn_profile"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:scaleType="centerCrop"
-            android:backgroundTint="#9C27B0"
-            android:src="@drawable/profile_b"
-            android:background="@drawable/mypicture" />
-
-    </RelativeLayout>
+    android:fillViewport="true">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginEnd="@dimen/_50sdp"
-        android:layout_marginStart="@dimen/_50sdp"
-        android:layout_weight="1"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="20dp"
+        android:paddingTop="24dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="24dp">
 
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/jakarta_medium"
+                    android:text="@string/home_greeting"
+                    android:textColor="@color/db_text_2"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/jakarta_extrabold"
+                    android:letterSpacing="-0.03"
+                    android:text="@string/home_title"
+                    android:textColor="@color/db_text"
+                    android:textSize="30sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/btn_music"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/db_tile"
+                android:contentDescription="@string/sound"
+                android:padding="12dp"
+                android:src="@drawable/ic_sound_off"
+                android:tint="@color/db_text" />
+
+            <ImageView
+                android:id="@+id/btn_profile"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/db_tile"
+                android:contentDescription="@string/profile"
+                android:padding="4dp"
+                android:src="@drawable/profile_b" />
+        </LinearLayout>
+
+        <!-- Board size -->
         <FrameLayout
             android:id="@+id/ll_choose_grid_size"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/_16sdp"
-                android:fontFamily="@font/galano_grotesque_black_1"
-                android:text="@string/choose_grid_size"
-                android:gravity="center"
-                android:background="@drawable/chooseyourgrid"
-                android:backgroundTint="#9C27B0"
-                android:textColor="@color/colorAccent"
-                android:textSize="@dimen/_16ssp" />
-
-
-            <!--For choosing row and column-->
+            android:layout_marginTop="22dp">
 
             <LinearLayout
+                android:id="@+id/ll_grid_size"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
-                android:layout_marginStart="@dimen/_15sdp"
-                android:layout_marginEnd="@dimen/_15sdp"
-                android:orientation="horizontal">
+                android:layout_height="64dp"
+                android:background="@drawable/db_card"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp">
 
-                <LinearLayout
-                    android:id="@+id/ll_grid_size"
-                    android:layout_width="match_parent"
+                <View
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/db_grid_icon" />
+
+                <TextView
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/rowcolmbutton"
-                    android:orientation="horizontal"
-                    android:backgroundTint="#A764B3"
-                    android:paddingBottom="@dimen/_2sdp"
-                    android:paddingEnd="@dimen/_15sdp"
-                    android:paddingStart="@dimen/_15sdp"
-                    android:paddingTop="@dimen/_4sdp">
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/jakarta_semibold"
+                    android:text="@string/board_size"
+                    android:textColor="@color/db_text"
+                    android:textSize="15sp" />
 
-                    <TextView
-                        android:id="@+id/tv_selected_grid"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="@dimen/_10sdp"
-                        android:layout_weight="1"
-                        android:fontFamily="@font/galano_grotesque_black_1"
-                        android:text="@string/four_by_four"
-                        android:textColor="@color/white"
-                        android:textSize="@dimen/_12ssp" />
+                <TextView
+                    android:id="@+id/tv_selected_grid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/jakarta_bold"
+                    android:text="Row 4 : Column 4"
+                    android:textColor="@color/db_text_2"
+                    android:textSize="14sp" />
 
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:src="@drawable/drop_down_arrow_icon" />
-
-
-                </LinearLayout>
-
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="6dp"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/ic_down_arrow"
+                    android:tint="@color/db_text_2" />
             </LinearLayout>
         </FrameLayout>
 
         <LinearLayout
             android:id="@+id/ll_choose_game_type"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="@dimen/_10sdp"
-            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
             android:orientation="vertical">
 
-            <!--layout for me and robot -->
-
-            <!--layout for me and friend -->
+            <!-- Hero: vs Robot -->
             <LinearLayout
+                android:id="@+id/ll_me_vs_robot"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="0.6"
-                android:background="@drawable/background_difuculty"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db_hero"
                 android:orientation="vertical"
-                android:backgroundTint="#9C27B0"
-                >
+                android:padding="20dp">
 
                 <LinearLayout
-                    android:id="@+id/ll_me_vs_robot"
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_margin="@dimen/_10sdp"
-                    android:layout_weight="0.7">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginStart="@dimen/_5sdp"
-                        android:gravity="start"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:id="@+id/img_player_1_name_vs_robot"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="@dimen/_2sdp"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/me" />
-
-                        <TextView
-                            android:id="@+id/tv_player_1_name_vs_robot"
-                            style="@style/dashboardTextTheme"
-                            android:layout_marginTop="-2dp"
-                            android:background="@drawable/mebox"
-                            android:gravity="center"
-                            android:paddingLeft="@dimen/_4sdp"
-                            android:paddingRight="@dimen/_4sdp"
-                            android:paddingBottom="@dimen/_2sdp"
-                            android:text="@string/me" />
-
-                    </LinearLayout>
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
 
                     <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_weight="1"
-                        android:src="@drawable/vs" />
+                        android:id="@+id/img_player_1_name_vs_robot"
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:importantForAccessibility="no"
+                        android:src="@drawable/me" />
 
-
-                    <LinearLayout
+                    <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginEnd="@dimen/_5sdp"
-                        android:gravity="end"
-                        android:orientation="vertical">
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:fontFamily="@font/jakarta_extrabold"
+                        android:text="vs"
+                        android:textColor="#CCFFFFFF"
+                        android:textSize="16sp" />
 
-                        <ImageView
-                            android:id="@+id/img_player_2_name_vs_robot"
-                            android:layout_width="@dimen/_30sdp"
-                            android:layout_height="@dimen/_30sdp"
-                            android:layout_marginEnd="@dimen/_2sdp"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/robot1" />
+                    <ImageView
+                        android:id="@+id/img_player_2_name_vs_robot"
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:importantForAccessibility="no"
+                        android:src="@drawable/robot1" />
 
-                        <TextView
-                            android:id="@+id/tv_player_2_name_vs_robot"
-                            style="@style/dashboardTextTheme"
-                            android:layout_marginTop="-2dp"
-                            android:background="@drawable/greenbutton"
-                            android:gravity="center"
-                            android:backgroundTint="#135A93"
-                            android:paddingLeft="@dimen/_4sdp"
-                            android:paddingRight="@dimen/_4sdp"
-                            android:paddingBottom="@dimen/_2sdp"
-                            android:text="@string/robot" />
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1" />
 
-                    </LinearLayout>
+                    <TextView
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:background="@drawable/db_play_circle"
+                        android:gravity="center"
+                        android:text="▶"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp" />
                 </LinearLayout>
 
-                <RelativeLayout
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:fontFamily="@font/jakarta_bold"
+                    android:text="@string/play_vs_robot"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_player_1_name_vs_robot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/jakarta_medium"
+                        android:text="@string/me"
+                        android:textColor="#D9FFFFFF"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/jakarta_medium"
+                        android:text=" · "
+                        android:textColor="#D9FFFFFF"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tv_player_2_name_vs_robot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/jakarta_medium"
+                        android:text="@string/robot"
+                        android:textColor="#D9FFFFFF"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:background="#AB61B8"
-                    android:paddingStart="@dimen/_10sdp"
-                    android:paddingEnd="5dp"
-                    android:layout_marginBottom="@dimen/_10sdp"
-                    android:layout_weight="0.3">
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal">
 
                     <TextView
                         android:id="@+id/easy_mode"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
                         android:background="@drawable/background_difuculty"
-                        android:paddingStart="5dp"
-                        android:paddingTop="3dp"
-                        android:paddingEnd="5dp"
-                        android:paddingBottom="3dp"
-                        android:text="Easy"
-                        android:textColor="@color/white"
-                        android:textSize="18sp" />
+                        android:fontFamily="@font/jakarta_bold"
+                        android:gravity="center"
+                        android:text="@string/easy"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
                     <TextView
                         android:id="@+id/medium_mode"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Medium"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
                         android:background="@drawable/background_difuculty"
-                        android:paddingStart="5dp"
-                        android:paddingEnd="5dp"
-                        android:paddingTop="3dp"
-                        android:paddingBottom="3dp"
-                        android:layout_centerInParent="true"
-                        android:textColor="@color/white"
-                        android:textSize="18sp"
-                        android:layout_gravity="center"/>
+                        android:fontFamily="@font/jakarta_bold"
+                        android:gravity="center"
+                        android:text="@string/medium"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
 
                     <TextView
                         android:id="@+id/hard_mode"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerInParent="true"
-                        android:layout_gravity="center_vertical"
-                        android:text="Hard"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
                         android:background="@drawable/background_difuculty"
-                        android:paddingStart="5dp"
-                        android:paddingEnd="5dp"
-                        android:paddingTop="3dp"
-                        android:paddingBottom="3dp"
-                        android:textColor="@color/white"
-                        android:textSize="18sp" />
-
-
-
-                </RelativeLayout>
-
-
+                        android:fontFamily="@font/jakarta_bold"
+                        android:gravity="center"
+                        android:text="@string/hard"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </LinearLayout>
             </LinearLayout>
 
+            <!-- vs Friend -->
             <LinearLayout
                 android:id="@+id/ll_me_vs_friend"
-                android:background="@drawable/background_difuculty"
-                android:padding="@dimen/_10sdp"
-                android:backgroundTint="#9C27B0"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_marginTop="@dimen/_5sdp"
-                android:layout_weight="0.4">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="@dimen/_5sdp"
-                    android:gravity="start"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:id="@+id/img_player_1_name_vs_friend"
-                        android:layout_width="wrap_content"
-
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/_2sdp"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/me" />
-
-                    <TextView
-                        android:id="@+id/tv_player_1_name_vs_friend"
-                        style="@style/dashboardTextTheme"
-                        android:gravity="center"
-                        android:layout_marginTop="-2dp"
-                        android:paddingBottom="@dimen/_2sdp"
-                        android:paddingRight="@dimen/_4sdp"
-                        android:paddingLeft="@dimen/_4sdp"
-                        android:background="@drawable/mebox"
-                        android:text="@string/me" />
-
-                </LinearLayout>
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/db_card"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="16dp">
 
                 <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:src="@drawable/vs" />
+                    android:id="@+id/img_player_1_name_vs_friend"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/me" />
 
+                <ImageView
+                    android:id="@+id/img_player_2_name_vs_friend"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:layout_marginStart="-10dp"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/friend" />
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginEnd="@dimen/_5sdp"
-                    android:gravity="end"
+                    android:layout_marginStart="14dp"
+                    android:layout_weight="1"
                     android:orientation="vertical">
 
-                    <ImageView
-                        android:id="@+id/img_player_2_name_vs_friend"
+                    <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:scaleType="centerCrop"
-                        android:layout_marginEnd="@dimen/_2sdp"
-                        android:src="@drawable/friend" />
+                        android:fontFamily="@font/jakarta_bold"
+                        android:text="@string/play_with_friend"
+                        android:textColor="@color/db_text"
+                        android:textSize="16sp" />
 
-                    <TextView
-                        android:id="@+id/tv_player_2_name_vs_friend"
-                        style="@style/dashboardTextTheme"
-                        android:gravity="center"
-                        android:layout_marginTop="-2dp"
-                        android:paddingBottom="@dimen/_2sdp"
-                        android:paddingRight="@dimen/_4sdp"
-                        android:paddingLeft="@dimen/_4sdp"
-                        android:backgroundTint="#135A93"
-                        android:background="@drawable/greenbutton"
-                        android:text="@string/friend" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
 
+                        <TextView
+                            android:id="@+id/tv_player_1_name_vs_friend"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/jakarta_medium"
+                            android:text="@string/me"
+                            android:textColor="@color/db_text_2"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/jakarta_medium"
+                            android:text=" · "
+                            android:textColor="@color/db_text_2"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/tv_player_2_name_vs_friend"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/jakarta_medium"
+                            android:text="@string/friend"
+                            android:textColor="@color/db_text_2"
+                            android:textSize="13sp" />
+                    </LinearLayout>
                 </LinearLayout>
-
-
             </LinearLayout>
 
-            <!--layout for me and online -->
+            <!-- Online mode is not offered (kept for the bindings). -->
             <LinearLayout
                 android:id="@+id/ll_me_vs_online"
-                android:background="@drawable/blueback"
-                android:padding="@dimen/_10sdp"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:visibility="invisible"
-                android:layout_marginTop="@dimen/_5sdp"
-                android:layout_weight="0.4">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="@dimen/_5sdp"
-                    android:gravity="start"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:id="@+id/img_player_1_name_vs_online_friend"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:scaleType="centerCrop"
-                        android:layout_marginStart="@dimen/_2sdp"
-                        android:src="@drawable/me" />
-
-                    <TextView
-                        android:id="@+id/tv_player_1_name_vs_online_friend"
-                        style="@style/dashboardTextTheme"
-                        android:gravity="center"
-                        android:layout_marginTop="-2dp"
-                        android:paddingBottom="@dimen/_2sdp"
-                        android:paddingRight="@dimen/_4sdp"
-                        android:paddingLeft="@dimen/_4sdp"
-                        android:background="@drawable/mebox"
-                        android:text="@string/me" />
-
-                </LinearLayout>
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
 
                 <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:src="@drawable/vs" />
+                    android:id="@+id/img_player_1_name_vs_online_friend"
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"
+                    android:importantForAccessibility="no" />
 
-                <LinearLayout
+                <TextView
+                    android:id="@+id/tv_player_1_name_vs_online_friend"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginEnd="@dimen/_5sdp"
-                    android:gravity="end"
-                    android:orientation="vertical">
+                    android:layout_height="wrap_content" />
 
-                    <ImageView
-                        android:id="@+id/img_player_2_name_vs_online_friend"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:scaleType="centerCrop"
-                        android:layout_marginEnd="@dimen/_2sdp"
-                        android:src="@drawable/online" />
+                <ImageView
+                    android:id="@+id/img_player_2_name_vs_online_friend"
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"
+                    android:importantForAccessibility="no" />
 
-                    <TextView
-                        android:id="@+id/tv_player_2_name_vs_online_friend"
-                        style="@style/dashboardTextTheme"
-                        android:gravity="center"
-                        android:layout_marginTop="-2dp"
-                        android:paddingBottom="@dimen/_2sdp"
-                        android:paddingRight="@dimen/_4sdp"
-                        android:paddingLeft="@dimen/_4sdp"
-                        android:background="@drawable/greenbutton"
-                        android:text="@string/online" />
-
-                </LinearLayout>
-
-
+                <TextView
+                    android:id="@+id/tv_player_2_name_vs_online_friend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
             </LinearLayout>
-
         </LinearLayout>
 
+        <!-- Tools -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
 
+            <ImageView
+                android:id="@+id/btn_history"
+                android:layout_width="0dp"
+                android:layout_height="72dp"
+                android:layout_weight="1"
+                android:background="@drawable/db_card"
+                android:contentDescription="@string/history"
+                android:padding="22dp"
+                android:src="@drawable/ic_history"
+                android:tint="#7FE0B8" />
+
+            <ImageView
+                android:id="@+id/btn_setting"
+                android:layout_width="0dp"
+                android:layout_height="72dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/db_card"
+                android:contentDescription="@string/settings"
+                android:padding="22dp"
+                android:src="@drawable/ic_settings"
+                android:tint="#FFB48A" />
+
+            <ImageView
+                android:id="@+id/btn_how_to"
+                android:layout_width="0dp"
+                android:layout_height="72dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/db_card"
+                android:contentDescription="@string/how_to_play"
+                android:padding="22dp"
+                android:src="@drawable/db_help"
+                android:tint="#8CC4F5" />
+
+            <ImageView
+                android:id="@+id/btn_share"
+                android:layout_width="0dp"
+                android:layout_height="72dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/db_card"
+                android:contentDescription="@string/share"
+                android:padding="22dp"
+                android:src="@drawable/ic_share"
+                android:tint="#C7B6FF" />
+        </LinearLayout>
     </LinearLayout>
-
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/_16sdp"
-        android:paddingEnd="@dimen/_16sdp"
-        android:paddingStart="@dimen/_16sdp"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:id="@+id/btn_history"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:scaleType="centerCrop"
-            android:src="@drawable/history" />
-
-        <ImageView
-            android:id="@+id/btn_setting"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:scaleType="centerCrop"
-            android:src="@drawable/settings" />
-
-        <ImageView
-            android:id="@+id/btn_how_to"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:scaleType="center"
-            android:src="@drawable/anyque" />
-
-    </RelativeLayout>
-
-</LinearLayout>
+</ScrollView>

@@ -114,4 +114,17 @@
     <string name="winPer">Win %</string>
 
 
+    <string name="home_greeting">Let\'s play</string>
+    <string name="home_title">Dots &amp; Boxes</string>
+    <string name="board_size">Board size</string>
+    <string name="play_vs_robot">Play vs Robot</string>
+    <string name="play_with_friend">Play with a friend</string>
+    <string name="sound">Sound</string>
+    <string name="history">History</string>
+    <string name="settings">Settings</string>
+    <string name="how_to_play">How to play</string>
+    <string name="share">Share</string>
+    <string name="easy">Easy</string>
+    <string name="medium">Medium</string>
+    <string name="hard">Hard</string>
 </resources>

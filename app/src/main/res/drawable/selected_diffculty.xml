@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Difficulty chip (selected): solid white pill. -->
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid android:color="@color/dark_"/>
-    <stroke android:color="@color/yellow" android:width="2dp"/>
-    <corners android:radius="10dp"/>
+    <corners android:radius="14dp" />
+    <solid android:color="#FFFFFF" />
 </shape>

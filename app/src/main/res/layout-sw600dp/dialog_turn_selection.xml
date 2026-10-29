@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@drawable/greenback"
     android:minWidth="340dp"
-    android:backgroundTint="#A947BA"
+    android:backgroundTint="#181B25"
     android:orientation="vertical">
 
     <TextView
@@ -16,7 +16,7 @@
         android:gravity="center"
         android:textSize="@dimen/_12ssp"
         android:textColor="@color/white"
-        android:fontFamily="@font/galano_grotesque_black_1"/>
+        android:fontFamily="@font/jakarta_bold"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -54,7 +54,7 @@
                     android:layout_height="wrap_content"
                     android:textSize="@dimen/_12ssp"
                     android:textColor="@color/white"
-                    android:fontFamily="@font/galano_grotesque_black_1"
+                    android:fontFamily="@font/jakarta_bold"
                     android:gravity="center"
                     tools:text="@string/you"/>
 
@@ -91,7 +91,7 @@
                     android:layout_height="wrap_content"
                     android:textSize="@dimen/_12ssp"
                     android:textColor="@color/white"
-                    android:fontFamily="@font/galano_grotesque_black_1"
+                    android:fontFamily="@font/jakarta_bold"
                     android:gravity="center"
                     tools:text="@string/robot"/>
 

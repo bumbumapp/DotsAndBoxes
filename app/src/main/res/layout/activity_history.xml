@@ -35,7 +35,7 @@
             tools:text="@string/no_history"
             android:gravity="center"
             android:textColor="@color/icon_color_white"
-            android:fontFamily="@font/galano_grotesque_black_1"
+            android:fontFamily="@font/jakarta_bold"
             android:textSize="@dimen/_14ssp"/>
 
 

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Dots-and-boxes motif: 3x3 dots with one claimed box. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="32dp" android:height="32dp" android:viewportWidth="32" android:viewportHeight="32">
+    <path android:fillColor="#2E2650" android:pathData="M8,0h16a8,8 0,0 1,8 8v16a8,8 0,0 1,-8 8h-16a8,8 0,0 1,-8 -8v-16a8,8 0,0 1,8 -8z" />
+    <path android:fillColor="#8B5CF6" android:pathData="M9,9h7v7h-7z" />
+    <path android:fillColor="#C7B6FF" android:pathData="M8,7a1.5,1.5 0,1 1,0 3,1.5 1.5,0 0,1 0,-3zM16,7a1.5,1.5 0,1 1,0 3,1.5 1.5,0 0,1 0,-3zM24,7a1.5,1.5 0,1 1,0 3,1.5 1.5,0 0,1 0,-3zM8,15a1.5,1.5 0,1 1,0 3,1.5 1.5,0 0,1 0,-3zM16,15a1.5,1.5 0,1 1,0 3,1.5 1.5,0 0,1 0,-3zM24,15a1.5,1.5 0,1 1,0 3,1.5 1.5,0 0,1 0,-3zM8,23a1.5,1.5 0,1 1,0 3,1.5 1.5,0 0,1 0,-3zM16,23a1.5,1.5 0,1 1,0 3,1.5 1.5,0 0,1 0,-3zM24,23a1.5,1.5 0,1 1,0 3,1.5 1.5,0 0,1 0,-3z" />
+</vector>

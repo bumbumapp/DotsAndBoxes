@@ -64,7 +64,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/_16sdp"
-                android:fontFamily="@font/galano_grotesque_black_1"
+                android:fontFamily="@font/jakarta_bold"
                 android:text="@string/choose_grid_size"
                 android:gravity="center"
                 android:background="@drawable/chooseyourgrid"
@@ -101,7 +101,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="@dimen/_10sdp"
                         android:layout_weight="1"
-                        android:fontFamily="@font/galano_grotesque_black_1"
+                        android:fontFamily="@font/jakarta_bold"
                         android:text="@string/four_by_four"
                         android:textColor="@color/white"
                         android:textSize="@dimen/_12ssp" />

@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/greenback"
     android:minWidth="300dp"
-    android:backgroundTint="#CE76DD"
+    android:backgroundTint="#181B25"
     android:orientation="vertical">
 
     <LinearLayout
@@ -40,7 +40,7 @@
                     android:layout_height="wrap_content"
                     android:drawableBottom="@drawable/titleborder"
                     android:drawablePadding="@dimen/_5sdp"
-                    android:fontFamily="@font/galano_grotesque_black_1"
+                    android:fontFamily="@font/jakarta_bold"
                     android:text="@string/win"
                     android:textColor="@color/icon_color_white"
                     android:textSize="@dimen/_14ssp" />
@@ -51,7 +51,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_5sdp"
-                    android:fontFamily="@font/galano_grotesque_black_1"
+                    android:fontFamily="@font/jakarta_bold"
                     android:text="Won Player Name"
                     android:textColor="@color/colorAccent"
                     android:textSize="@dimen/_12ssp" />
@@ -60,7 +60,7 @@
                     android:id="@+id/tv_won_player_score"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/galano_grotesque_black_1"
+                    android:fontFamily="@font/jakarta_bold"
                     android:text="00"
                     android:textColor="@color/icon_color_white"
                     android:textSize="@dimen/_22ssp" />
@@ -101,7 +101,7 @@
                     android:layout_height="wrap_content"
                     android:drawableBottom="@drawable/titleborder"
                     android:drawablePadding="@dimen/_5sdp"
-                    android:fontFamily="@font/galano_grotesque_black_1"
+                    android:fontFamily="@font/jakarta_bold"
                     android:text="@string/lost"
                     android:textColor="@color/icon_color_white"
                     android:textSize="@dimen/_14ssp" />
@@ -111,7 +111,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_5sdp"
-                    android:fontFamily="@font/galano_grotesque_black_1"
+                    android:fontFamily="@font/jakarta_bold"
                     android:text="lost Player Name"
                     android:textColor="@color/colorAccent"
                     android:textSize="@dimen/_12ssp" />
@@ -120,7 +120,7 @@
                     android:id="@+id/tv_lost_player_score"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/galano_grotesque_black_1"
+                    android:fontFamily="@font/jakarta_bold"
                     android:text="00"
                     android:textColor="@color/icon_color_white"
                     android:textSize="@dimen/_22ssp" />
@@ -159,7 +159,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/galano_grotesque_black_1"
+                android:fontFamily="@font/jakarta_bold"
                 android:gravity="center_horizontal"
                 android:text="Restart"
                 android:textColor="@color/yellow"
@@ -185,7 +185,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/galano_grotesque_black_1"
+                android:fontFamily="@font/jakarta_bold"
                 android:gravity="center_horizontal"
                 android:text="Home"
                 android:textColor="@color/icon_color_white"

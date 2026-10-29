@@ -122,6 +122,17 @@ public class HomeFragment extends Fragment {
     private String column;
     private PlayerNameFragment playerNameFragment;
 
+    /** Bento difficulty chips: the chosen one is a white pill with accent text, the others translucent. */
+    private void selectDifficulty(String value) {
+        TextView[] chips = {chipeasy, chipnedium, chipHard};
+        String[] values = {"easy", "medium", "hard"};
+        for (int i = 0; i < chips.length; i++) {
+            boolean on = values[i].equals(value);
+            chips[i].setBackgroundResource(on ? R.drawable.selected_diffculty : R.drawable.background_difuculty);
+            chips[i].setTextColor(on ? 0xFF5B21B6 : 0xFFFFFFFF);
+        }
+    }
+
     public HomeFragment() {
         // Required empty public constructor
     }
@@ -170,7 +181,7 @@ public class HomeFragment extends Fragment {
 
                     preferences.edit().putBoolean(getString(R.string.pref_key_music), true).apply();
                     Glide.with(getActivity())
-                            .load(R.drawable.volumeon)
+                            .load(R.drawable.ic_sound_on)
                             .into(btnMusic);
                 } else {
                     intentMusic.setAction(MusicPlayerService.ACTION_STOP_MUSIC);
@@ -178,7 +189,7 @@ public class HomeFragment extends Fragment {
 
                     preferences.edit().putBoolean(getString(R.string.pref_key_music), false).apply();
                     Glide.with(getActivity())
-                            .load(R.drawable.volumoff)
+                            .load(R.drawable.ic_sound_off)
                             .into(btnMusic);
                 }
                 break;
@@ -423,11 +434,11 @@ public class HomeFragment extends Fragment {
 
         if (playMusic) {
             Glide.with(getActivity())
-                    .load(R.drawable.volumeon)
+                    .load(R.drawable.ic_sound_on)
                     .into(btnMusic);
         } else {
             Glide.with(getActivity())
-                    .load(R.drawable.volumoff)
+                    .load(R.drawable.ic_sound_off)
                     .into(btnMusic);
         }
 
@@ -442,41 +453,18 @@ public class HomeFragment extends Fragment {
         }
         Preferenc preferenc=new Preferenc(requireContext());
         String value=preferenc.getString();
-        if (value.equals("easy")){
-            chipeasy.setBackgroundResource(R.drawable.selected_diffculty);
-        }
-        if (value.equals("medium")){
-            chipnedium.setBackgroundResource(R.drawable.selected_diffculty);
-        }
-        if (value.equals("hard")){
-            chipHard.setBackgroundResource(R.drawable.selected_diffculty);
-        }
-        chipeasy.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                chipeasy.setBackgroundResource(R.drawable.selected_diffculty);
-                chipHard.setBackgroundResource(R.drawable.background_difuculty);
-                chipnedium.setBackgroundResource(R.drawable.background_difuculty);
-                preferenc.putString("easy");
-            }
+        selectDifficulty(value);
+        chipeasy.setOnClickListener(v -> {
+            selectDifficulty("easy");
+            preferenc.putString("easy");
         });
-        chipHard.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                chipeasy.setBackgroundResource(R.drawable.background_difuculty);
-                chipHard.setBackgroundResource(R.drawable.selected_diffculty);
-                chipnedium.setBackgroundResource(R.drawable.background_difuculty);
-                preferenc.putString("hard");
-            }
+        chipnedium.setOnClickListener(v -> {
+            selectDifficulty("medium");
+            preferenc.putString("medium");
         });
-        chipnedium.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                chipeasy.setBackgroundResource(R.drawable.background_difuculty);
-                chipHard.setBackgroundResource(R.drawable.background_difuculty);
-                chipnedium.setBackgroundResource(R.drawable.selected_diffculty);
-                preferenc.putString("medium");
-            }
+        chipHard.setOnClickListener(v -> {
+            selectDifficulty("hard");
+            preferenc.putString("hard");
         });
    /*     if (imageFromPreference != null && !TextUtils.isEmpty(imageFromPreference)) {
             ((MainActivity) getActivity()).setImageToImageView(imageFromPreference, imgPlayer1NameVsRobot);

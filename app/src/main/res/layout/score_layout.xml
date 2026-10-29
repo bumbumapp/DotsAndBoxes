@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#C9BEDD"
+    android:background="#0D0F16"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical">
 
@@ -49,22 +49,22 @@
                         android:layout_width="@dimen/_50sdp"
                         android:layout_height="wrap_content"
                         android:ellipsize="marquee"
-                        android:fontFamily="@font/galano_grotesque_black_1"
+                        android:fontFamily="@font/jakarta_bold"
                         android:gravity="center"
                         android:marqueeRepeatLimit="marquee_forever"
                         android:singleLine="true"
                         android:text="@string/you"
-                        android:textColor="@color/dark_"
+                        android:textColor="@color/db_text"
                         android:textSize="@dimen/_12ssp" />
 
                     <TextView
                         android:id="@+id/tv_player_1_score"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/galano_grotesque_black_1"
+                        android:fontFamily="@font/jakarta_bold"
                         android:gravity="center"
                         android:text="@string/score_default"
-                        android:textColor="@color/dark_"
+                        android:textColor="@color/db_text"
                         android:textSize="@dimen/_22ssp" />
 
 
@@ -100,22 +100,22 @@
                         android:layout_width="@dimen/_50sdp"
                         android:layout_height="wrap_content"
                         android:ellipsize="marquee"
-                        android:fontFamily="@font/galano_grotesque_black_1"
+                        android:fontFamily="@font/jakarta_bold"
                         android:gravity="center"
                         android:marqueeRepeatLimit="marquee_forever"
                         android:singleLine="true"
                         android:text="@string/robot"
-                        android:textColor="@color/dark_"
+                        android:textColor="@color/db_text"
                         android:textSize="@dimen/_12ssp" />
 
                     <TextView
                         android:id="@+id/tv_player_2_score"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/galano_grotesque_black_1"
+                        android:fontFamily="@font/jakarta_bold"
                         android:gravity="center"
                         android:text="@string/score_default"
-                        android:textColor="@color/dark_"
+                        android:textColor="@color/db_text"
                         android:textSize="@dimen/_22ssp" />
 
 
@@ -141,7 +141,7 @@
         android:layout_width="@dimen/_130sdp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:fontFamily="@font/galano_grotesque_black_1"
+        android:fontFamily="@font/jakarta_bold"
         android:paddingStart="@dimen/_15sdp"
         android:paddingTop="@dimen/_5sdp"
         android:paddingEnd="@dimen/_15sdp"

@@ -92,7 +92,7 @@ public class BoardView extends View {
         lineTempPaint.setColor(ContextCompat.getColor(getContext(), R.color.icon_color_white));*/
 
         dotPaint = new Paint();
-        dotPaint.setColor(ContextCompat.getColor(getContext(), R.color.dark_blues));
+        dotPaint.setColor(ContextCompat.getColor(getContext(), R.color.db_dot)); // readable on the dark page and the wood board
         dotPaint.setAntiAlias(true);
 
 

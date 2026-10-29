@@ -58,7 +58,7 @@
     <style name="dashboardTextTheme">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:fontFamily">@font/galano_grotesque_black_1</item>
+        <item name="android:fontFamily">@font/jakarta_bold</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:textSize">@dimen/_12ssp</item>
     </style>
@@ -90,7 +90,7 @@
         <item name="android:colorBackground">@color/icon_color_white</item>
         <item name="android:windowBackground">@color/colorBackground</item>
         <item name="android:textSize">18sp</item>
-        <item name="android:fontFamily">@font/galano_grotesque_black_1</item>
+        <item name="android:fontFamily">@font/jakarta_bold</item>
         <item name="preferenceTheme">@style/PreferenceThemeOverlay</item>
         <item name="colorAccent">#FFC107</item>
         <item name="android:colorControlNormal">@color/colorTitleBar</item>
@@ -106,7 +106,7 @@
     <style name="PopupMenu" parent="@android:style/Widget.PopupMenu">
         <item name="android:popupBackground">@color/colorBackground</item>
         <item name="android:textColor">@color/icon_color_white</item>
-        <item name="android:fontFamily">@font/galano_grotesque_black_1</item>
+        <item name="android:fontFamily">@font/jakarta_bold</item>
         <item name="android:textSize">@dimen/_12ssp</item>
     </style>
 
