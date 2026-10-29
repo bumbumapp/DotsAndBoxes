@@ -48,7 +48,7 @@
             android:background="@drawable/home"
             android:textAllCaps="true"
             android:backgroundTint="@color/dark_"
-            android:textColor="#8F1616"
+            android:textColor="#FFFFFF"
             android:textSize="@dimen/_12ssp" />
 
 
@@ -62,7 +62,7 @@
             android:backgroundTint="@color/dark_"
             android:background="@drawable/playbutton"
             android:textAllCaps="true"
-            android:textColor="#4CAF50"
+            android:textColor="#FFFFFF"
             android:textSize="@dimen/_12ssp" />
     </LinearLayout>
 
