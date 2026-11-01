@@ -24,10 +24,6 @@ import com.dotsandboxes.game.controllers.Game;
 import com.dotsandboxes.AdsHelper;
 import com.dotsandboxes.utils.Constants;
 import com.dotsandboxes.utils.Globals;
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.LoadAdError;
-import com.google.android.gms.ads.interstitial.InterstitialAd;
-import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;

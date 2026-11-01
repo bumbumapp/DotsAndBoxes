@@ -37,10 +37,6 @@ import com.dotsandboxes.game.controllers.Game;
 import com.dotsandboxes.services.MusicPlayerService;
 import com.dotsandboxes.utils.Constants;
 import com.dotsandboxes.utils.PrefUtils;
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.MobileAds;
-import com.google.android.gms.ads.initialization.InitializationStatus;
-import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 import com.google.firebase.crashlytics.FirebaseCrashlytics;
 import com.tuyenmonkey.mkloader.MKLoader;
 

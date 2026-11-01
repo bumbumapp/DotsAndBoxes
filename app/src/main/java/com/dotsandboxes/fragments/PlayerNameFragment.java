@@ -19,10 +19,6 @@ import android.widget.Toast;
 import com.dotsandboxes.R;
 import com.dotsandboxes.AdsHelper;
 import com.dotsandboxes.utils.Globals;
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.LoadAdError;
-import com.google.android.gms.ads.interstitial.InterstitialAd;
-import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.DialogFragment;

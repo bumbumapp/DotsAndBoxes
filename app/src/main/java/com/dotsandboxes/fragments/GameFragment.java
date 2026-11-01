@@ -43,10 +43,6 @@ import com.dotsandboxes.utils.CountDownTimerWithPause;
 import com.dotsandboxes.utils.Globals;
 import com.dotsandboxes.utils.PrefUtils;
 import com.dotsandboxes.views.BoardView;
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.LoadAdError;
-import com.google.android.gms.ads.interstitial.InterstitialAd;
-import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback;
 import com.google.android.material.chip.Chip;
 import com.google.android.material.chip.ChipGroup;
 
@@ -77,7 +73,6 @@ public class GameFragment extends Fragment {
     public static final String ARG_PLAYER1_NAME = "args.name.payer1";
     public static final String ARG_PLAYER2_NAME = "args.name.payer2";
     private static final long BOT_DELAY_TIME = 1500;
-    private InterstitialAd mInterstitialAd;
 
     @BindView(R.id.tv_player_1_score)
     TextView tvPlayer1Score;
